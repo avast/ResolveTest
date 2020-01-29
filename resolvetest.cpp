@@ -230,7 +230,7 @@ int main(int argc, const char* args[]){
   }
 
   std::cout << std::endl << "DNS query:" << std::endl;
-  if (query(AF_INET, resolveName) && query(AF_INET6, resolveName)){
+  if (query(ns_t_a, resolveName) && query(ns_t_aaaa, resolveName)){
     std::cout << "OK" << std::endl;
   }else{
     std::cerr << "query FAILURE" << std::endl;
