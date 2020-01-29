@@ -80,7 +80,7 @@ bool parse_record(ns_msg &msg, const int rrnum){
       break;
     case ns_t_aaaa:
       // IPv6 address
-      std::cout << "AAA: " << inet4str(*((in_addr *)ns_rr_rdata(rr)));
+      std::cout << "AAAA: " << inet6str(*((in6_addr *)ns_rr_rdata(rr)));
       break;
     case ns_t_txt:
     {
